@@ -1,0 +1,4 @@
+name: EnosiNamePlugin
+version: 1.0
+main: be.niceware.Main
+api-version: 1.21
