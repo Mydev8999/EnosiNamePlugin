@@ -1,4 +1,4 @@
-# EnosiNamePlugin ✦𝓝𝓲𝓬𝓮𝔀𝓪𝓻𝓮✦
+# EnosiNamePlugin ℕι¢єωαяє
 
 ## 🌟 Description
 **EnosiNamePlugin** est un plugin Minecraft spécialement conçu pour le serveur **Enosi**.  
@@ -18,18 +18,23 @@ Il permet de **synchroniser automatiquement les pseudos Discord avec les pseudos
 
 ## 🛠️ Compatibilité
 - Serveur Enosi uniquement
-- Minecraft versions 1.XX (à ajuster selon le serveur)
-- Compatible avec Fabric/Spigot/Bukkit selon l’implémentation
+- Minecraft versions 1.21.10 (à ajuster selon le serveur)
+- Compatible avec /Spigot/ 
 
 ## 🤝 Contribution
 Les contributions sont les bienvenues !  
 Si tu souhaites proposer des améliorations ou corriger des bugs, crée une **pull request** ou ouvre une **issue**.
 
 ## 📄 Licence
-Indique ici la licence de ton choix (ex. MIT, GPL, etc.)
+
+Ce projet est sous licence **MIT**.  
+Vous êtes libre de **utiliser, copier, modifier et distribuer** ce logiciel, à condition de **conserver la notice de copyright et cette licence** dans toutes les copies ou parties substantielles du logiciel.
+
 
 ---
 
 Développé par 
 
-# ✦𝓝𝓲𝓬𝓮𝔀𝓪𝓻𝓮✦
+# ℕι¢єωαяє
+
+© ℕι¢єωαяє 2025
