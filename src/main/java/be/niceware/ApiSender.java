@@ -3,27 +3,38 @@ package be.niceware;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+
+import org.bukkit.Bukkit;
 
 public class ApiSender {
 
-    public static void sendToApi(String uuid, String discord) {
+    public static boolean sendDiscordInfo(String uuid, String ingame, String discord, String ip) {
         try {
-            URL url = new URL("https://ton-api.com/endpoint"); // ← ton lien API
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            URL url = new URL("http://127.0.0.1:5000/link");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-            conn.setRequestMethod("POST");
-            conn.setDoOutput(true);
-            conn.setRequestProperty("Content-Type", "application/json");
+            con.setRequestMethod("POST");
+            con.setRequestProperty("Content-Type", "application/json");
+            con.setDoOutput(true);
 
-            String json = "{ \"uuid\": \"" + uuid + "\", \"discord\": \"" + discord + "\" }";
+            String serverName = Bukkit.getServer().getMotd();
 
-            try (OutputStream os = conn.getOutputStream()) {
-                os.write(json.getBytes());
+            String json = String.format(
+                "{\"uuid\":\"%s\",\"ingame\":\"%s\",\"discord\":\"%s\",\"ip\":\"%s\",\"server\":\"%s\"}",
+                uuid, ingame, discord, ip, serverName
+            );
+
+            try (OutputStream os = con.getOutputStream()) {
+                os.write(json.getBytes(StandardCharsets.UTF_8));
             }
 
-            conn.getInputStream().close();
+            int code = con.getResponseCode();
+            return code == 200;
+
         } catch (Exception e) {
             e.printStackTrace();
+            return false;
         }
     }
 }

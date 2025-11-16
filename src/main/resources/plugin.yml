@@ -1,4 +1,7 @@
 name: EnosiNamePlugin
-version: 1.0
 main: be.niceware.Main
+version: 1.0
 api-version: 1.21
+commands:
+  discord:
+    description: Enregistre ton Discord
