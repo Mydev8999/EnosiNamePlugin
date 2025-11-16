@@ -6,6 +6,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import org.bukkit.Bukkit;
+import net.md_5.bungee.api.ChatColor;
 
 public class ApiSender {
 
@@ -18,7 +19,16 @@ public class ApiSender {
             con.setRequestProperty("Content-Type", "application/json");
             con.setDoOutput(true);
 
-            String serverName = Bukkit.getServer().getMotd();
+            // Strip des couleurs du MOTD
+            String cleanMotd = ChatColor.stripColor(Bukkit.getServer().getMotd());
+
+            // On garde UNIQUEMENT "ENOSI LABS"
+            String serverName = "ENOSI LABS";
+
+            // Optionnel si tu veux détecter
+            if (cleanMotd.contains("ENOSI LABS")) {
+                serverName = "ENOSI LABS";
+            }
 
             String json = String.format(
                 "{\"uuid\":\"%s\",\"ingame\":\"%s\",\"discord\":\"%s\",\"ip\":\"%s\",\"server\":\"%s\"}",
