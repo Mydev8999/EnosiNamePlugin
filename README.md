@@ -1,6 +1,6 @@
 # EnosiNamePlugin ℕι¢єωαяє
 
-![image] (Gemini_Generated_Image_t2s6d9t2s6d9t2s6.webp)
+![image](Gemini_Generated_Image_t2s6d9t2s6d9t2s6.webp)
 
 ## 🌟 Description
 **EnosiNamePlugin** est un plugin Minecraft spécialement conçu pour le serveur **Enosi**.  
