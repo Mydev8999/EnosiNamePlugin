@@ -1,5 +1,7 @@
 # EnosiNamePlugin ℕι¢єωαяє
 
+![image] (./Gemini_Generated_Image_t2s6d9t2s6d9t2s6.webp)
+
 ## 🌟 Description
 **EnosiNamePlugin** est un plugin Minecraft spécialement conçu pour le serveur **Enosi**.  
 Il permet de **synchroniser automatiquement les pseudos Discord avec les pseudos in-game** 🎮💬, facilitant la gestion des utilisateurs et la cohérence de la communauté.
